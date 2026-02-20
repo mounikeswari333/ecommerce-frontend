@@ -1,0 +1,68 @@
+.auth-page {
+  max-width: 460px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+  padding: 32px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(242, 92, 92, 0.08), transparent 55%),
+    var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-page::before {
+  content: "";
+  position: absolute;
+  inset: -40% -30% auto auto;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(
+    circle,
+    rgba(14, 124, 123, 0.35),
+    transparent 70%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.auth-page h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+}
+
+.auth-page form {
+  display: grid;
+  gap: 12px;
+}
+
+.auth-page input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+[data-theme="dark"] .auth-page input {
+  background: rgba(31, 27, 24, 0.7);
+}
+
+.auth-page input:focus {
+  outline: none;
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 2px rgba(14, 124, 123, 0.25);
+}
+
+.auth-page p {
+  text-align: center;
+  color: var(--text-soft);
+}

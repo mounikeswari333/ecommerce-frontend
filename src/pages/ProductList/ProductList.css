@@ -1,0 +1,16 @@
+.product-list {
+  display: grid;
+  gap: 24px;
+}
+
+.product-list-header h2 {
+  font-size: 28px;
+}
+
+.product-list-header p {
+  color: var(--text-soft);
+}
+
+.product-list-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}

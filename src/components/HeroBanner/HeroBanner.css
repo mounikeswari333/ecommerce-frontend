@@ -1,0 +1,69 @@
+.hero-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 28px;
+  background: linear-gradient(120deg, #ffe1cb, #fbeed9, #f8f4f0);
+  border: 1px solid var(--border);
+}
+
+.hero-banner-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.hero-banner-kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.hero-banner-subtitle {
+  color: var(--text-soft);
+  max-width: 420px;
+}
+
+.hero-banner-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.hero-banner-art {
+  position: relative;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-banner-orb {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #f25c5c, #f7b267);
+  border-radius: 50%;
+  filter: blur(0.5px);
+}
+
+.hero-banner-card {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  padding: 16px 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+.hero-banner-card span {
+  display: block;
+  color: var(--text-soft);
+  font-weight: 500;
+  margin-top: 6px;
+}

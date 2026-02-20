@@ -1,0 +1,25 @@
+.admin-add-product {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-add-product-form {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.admin-add-product-form input,
+.admin-add-product-form textarea {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+}
+
+.admin-add-product-form textarea {
+  min-height: 110px;
+}

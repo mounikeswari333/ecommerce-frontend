@@ -1,0 +1,13 @@
+.profile-page {
+  display: grid;
+  gap: 16px;
+}
+
+.profile-card {
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  display: grid;
+  gap: 8px;
+}

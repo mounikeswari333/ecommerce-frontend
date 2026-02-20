@@ -1,0 +1,23 @@
+.admin-dashboard {
+  display: grid;
+  gap: 24px;
+}
+
+.admin-dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.admin-dashboard-card {
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.admin-dashboard-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

@@ -1,0 +1,14 @@
+.wishlist-page {
+  display: grid;
+  gap: 16px;
+}
+
+.wishlist-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.wishlist-empty {
+  text-align: center;
+  display: grid;
+  gap: 12px;
+}

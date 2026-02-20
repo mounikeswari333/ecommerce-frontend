@@ -1,0 +1,6 @@
+.not-found-page {
+  text-align: center;
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}

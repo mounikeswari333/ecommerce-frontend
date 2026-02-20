@@ -1,0 +1,89 @@
+.checkout-page {
+  display: grid;
+  gap: 24px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.checkout-form {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+}
+
+.checkout-summary {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 12px;
+}
+
+.checkout-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.checkout-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(120deg, var(--accent-2), #36b2a7);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 18px;
+  width: fit-content;
+  box-shadow: var(--shadow);
+}
+
+.checkout-success div {
+  display: grid;
+  gap: 2px;
+}
+
+.checkout-success span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.checkout-success-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.checkout-success-logo svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

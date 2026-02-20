@@ -1,0 +1,9 @@
+.add-to-cart-button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}

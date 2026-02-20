@@ -1,0 +1,66 @@
+.admin-manage-products {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-manage-products-list {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-manage-products-card {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.admin-manage-products-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.admin-manage-products-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-manage-products-actions button,
+.admin-manage-products-edit-actions button {
+  border: 1px solid var(--border);
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.admin-manage-products-edit-form {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.admin-manage-products-edit-form input,
+.admin-manage-products-edit-form textarea {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.admin-manage-products-edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .admin-manage-products-card {
+    grid-template-columns: 1fr;
+  }
+}
